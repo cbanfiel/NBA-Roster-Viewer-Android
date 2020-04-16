@@ -6,15 +6,22 @@ public class Player {
     private String url;
     private int positionId;
     private int number;
+    private String height;
+    private int age;
+    private int salary;
+    private int years;
 
 
-    public Player(String name, String url , int positionId, int number) {
+    public Player(String name, String url, int positionId, int number, String height, int age, int salary, int years) {
         this.name = name;
         this.url = url;
         this.positionId = positionId;
         this.number = number;
+        this.height = height;
+        this.age = age;
+        this.salary = salary;
+        this.years = years;
     }
-
 
     public String getName() {
         return name;
@@ -50,5 +57,23 @@ public class Player {
         }
     }
 
+    public String getHeight() {
+        return height;
+    }
 
+    public int getAge() {
+        return age;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public int getYears() {
+        return years;
+    }
+
+    public String getContract(){
+        return years + " Yrs $" + Math.round((salary/1000000)*10) / 10.0 + " Mil";
+    }
 }

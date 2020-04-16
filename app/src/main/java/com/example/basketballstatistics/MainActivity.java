@@ -77,8 +77,11 @@ public class MainActivity extends AppCompatActivity {
                                     String playerUrl =  playerJson.optString("faceSrc", "");
                                     int number = playerJson.getInt("number");
                                     int position = playerJson.getInt("position");
-
-                                    team.addPlayer(new Player(playerName, playerUrl, position, number));
+                                    int age = playerJson.getInt("age");
+                                    int salary = playerJson.getInt("salary");
+                                    int years = playerJson.getInt("years");
+                                    String height = playerJson.getString("height");
+                                    team.addPlayer(new Player(playerName, playerUrl, position, number, height,  age, salary, years));
                                 }
 
                                 Roster.teams.add(team);

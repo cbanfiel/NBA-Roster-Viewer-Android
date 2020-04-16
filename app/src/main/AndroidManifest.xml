@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PlayerList"></activity>
+        <activity android:name=".PlayerProfile"></activity>
+        <activity android:name=".PlayerList" />
         <activity android:name=".TeamList" />
         <activity android:name=".MainActivity">
             <intent-filter>

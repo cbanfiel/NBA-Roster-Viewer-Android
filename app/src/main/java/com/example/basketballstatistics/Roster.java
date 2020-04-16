@@ -8,6 +8,7 @@ public class Roster {
 
     public static ArrayList<Team> teams;
     public static Team selected;
+    public static Player selectedPlayer;
 
 
     public static void sortTeams(){
